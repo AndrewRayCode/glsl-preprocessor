@@ -1,0 +1,35 @@
+{
+  "name": "@andrewray/glsl-preprocessor",
+  "description": "Preprocess GLSL source code",
+  "version": "1.0.0",
+  "author": {
+    "name": "Andrew Ray",
+    "url": "https://github.com/ParksProjets"
+  },
+  "repository": "AndrewRayCode/glsl-preprocessor",
+  "license": {
+    "type": "GPLv2",
+    "url": "https://github.com/AndrewRayCode/glsl-preprocessor"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch-test": "jest --watch"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/.*(\\.|/)(test|spec))\\.jsx?$"
+  },
+  "keywords": [
+    "preprocessor",
+    "compile",
+    "compiler",
+    "glsl"
+  ],
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
