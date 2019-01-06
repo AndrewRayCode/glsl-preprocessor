@@ -13,7 +13,7 @@ describe('#ifdef', () => {
 		#endif
 		`;
 
-    const res = new Preprocessor().compile(src);
+    const res = new Preprocessor().preprocess(src);
     expect(res.trim()).toEqual('x = 1;');
   });
 
@@ -26,7 +26,7 @@ describe('#ifdef', () => {
 		#endif
 		`;
 
-    const res = new Preprocessor().compile(src);
+    const res = new Preprocessor().preprocess(src);
     expect(res.trim()).toEqual('x = 1;');
   });
 });

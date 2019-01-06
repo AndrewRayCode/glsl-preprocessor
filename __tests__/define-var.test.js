@@ -11,7 +11,7 @@ describe('.constants', () => {
       constants: {
         VARIABLE: '3'
       }
-    }).compile(src);
+    }).preprocess(src);
     expect(res.trim()).toEqual('x = 3;');
   });
 });

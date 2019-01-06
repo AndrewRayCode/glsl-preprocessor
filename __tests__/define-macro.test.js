@@ -9,7 +9,7 @@ describe('macro evaluation', () => {
 		`;
 
     it('expands the macro', () => {
-      const res = new Preprocessor().compile(src);
+      const res = new Preprocessor().preprocess(src);
       expect(res.trim()).toEqual('x = 74;');
     });
   });
@@ -22,7 +22,7 @@ describe('macro evaluation', () => {
 		`;
 
     it('expands the macro with arguments', () => {
-      const res = new Preprocessor().compile(src);
+      const res = new Preprocessor().preprocess(src);
       expect(res.trim()).toEqual(`x = ${a}*5*7;`);
     });
   });
@@ -36,7 +36,7 @@ describe('macro evaluation', () => {
 		`;
 
     it('expands the nested macro with arguments', () => {
-      const res = new Preprocessor().compile(src);
+      const res = new Preprocessor().preprocess(src);
       expect(res.trim()).toEqual(`x = ${a}*5*1-2;`);
     });
   });
@@ -48,7 +48,7 @@ describe('macro evaluation', () => {
 		`;
 
     it('expands the nested macro with arguments', () => {
-      const res = new Preprocessor().compile(src);
+      const res = new Preprocessor().preprocess(src);
       expect(res.trim()).toEqual(`x = vec4(1, 1, 1, 0)`);
     });
   });

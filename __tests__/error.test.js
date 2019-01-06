@@ -10,7 +10,7 @@ describe('error', () => {
 
     const res = new Preprocessor();
     try {
-      res.compile(src);
+      res.preprocess(src);
       expect(true).toBe(false);
     } catch (e) {
       expect(e).toEqual(text);

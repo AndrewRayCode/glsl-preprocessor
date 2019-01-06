@@ -1,11 +1,11 @@
-A GLSL preprocessor based on [C-Preprocessor](https://github.com/ParksProjets/C-Preprocessor)
+A GLSL preprocessor based on the [C-Preprocessor](https://github.com/ParksProjets/C-Preprocessor) library.
 
 # Usage
 
 ```js
-import { Compiler } from '@andrewray/glsl-preprocessor';
+import Preprocessor from '@andrewray/glsl-preprocessor';
 
-const result = new Compiler(options).compile(src);
+const result = new Preprocessor(options).preprocess(src);
 ```
 
 # Options
