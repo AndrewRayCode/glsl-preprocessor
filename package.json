@@ -1,7 +1,7 @@
 {
   "name": "@andrewray/glsl-preprocessor",
   "description": "Preprocess GLSL source code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Andrew Ray",
     "url": "https://github.com/AndrewRayCode"
